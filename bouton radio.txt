@@ -1,0 +1,12 @@
+GtkWidget *radio_homme;
+GtkWidget *radio_femme;
+	radio_homme = lookup_widget(objet, "admin_scr_ges_employ_window_add_sexe_radiobutton_homme");
+    	radio_femme = lookup_widget(objet, "admin_scr_ges_employ_window_add_sexe_radiobutton_femme");
+	if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON(radio_homme))==TRUE)
+    {
+        strcpy(E.sexe, "Homme");
+    }
+	if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON(radio_femme))==TRUE)
+	{
+		strcpy(E.sexe, "Femme");
+	}
